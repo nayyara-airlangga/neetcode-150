@@ -1,0 +1,25 @@
+Input:
+nums: array of integers
+
+Output:
+triplets: Array of arrays of length 3 (triplets) where the sum of each element of the nested array is 0
+
+Condition:
+Each element of a triplet must have different indices
+
+Flow:
+1. If length of nums < 3, then just return an empty array since its not enough to form a triplet. Else move to step 2
+2. Sort nums first. This is crucial to make the code more performant and simpler
+3. Define an array to contain the triplets
+4. Define a pointer for the first fixed element. We could just use the first element of nums to start
+5. Iterate through nums and do
+  i. Define two pointers. The second at the beginning of the nums array and the third at the end of the nums array
+  ii. Check the sum from each pointer.
+    a. If the sum == 0, then add the triplet to the triplets array and move the second and third pointer forward and back respectively
+    b. If sum > 0, move the third pointer back and repeat from step 5.ii
+    c. If sum < 0 move the second pointer forward and repeat from step 5.ii
+    d. To optimize, move the second pointer forward for every time the number that second pointer references is the same. 
+       It won't produce different results so skip it
+    e. Once the second the pointer is at the end, move the first pointer forward. Repeat from step 5 until first pointer
+       is at the end of the nums array
+6. Return the array of triplets
