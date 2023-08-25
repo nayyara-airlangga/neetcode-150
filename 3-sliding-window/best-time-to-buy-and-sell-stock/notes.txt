@@ -1,0 +1,13 @@
+Input:
+prices: array of integers/prices
+prices[i]: price on the i-th day
+
+Output:
+profit:
+
+Description:
+Find the maximum profit. We want to find this using the day where we bought it - the day where we sell
+profit = day buy - day sell
+
+Flow:
+1. 
