@@ -1,0 +1,2 @@
+Inverting a binary tree can be done recursively.
+For each node in the binary tree, swap the positions of the left child with the right child
