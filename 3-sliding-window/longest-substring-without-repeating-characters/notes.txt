@@ -1,0 +1,9 @@
+Window pointers:
+- start_ptr
+- end_ptr
+
+Condition to stop expanstion:
+if char for start_ptr == char for end_ptr
+
+Edge cases:
+String of length 1, return 1
