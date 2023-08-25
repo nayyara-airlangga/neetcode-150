@@ -1,0 +1,9 @@
+Append to stack when:
+- Current char is opening brackets
+
+Pop from stack when:
+- Current char is closing bracket and top of stack is corresponding opening bracket
+
+Return False if
+- Current char is closing bracket and top of stack is not corresponding opening bracket
+- Stack is not empty
